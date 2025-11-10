@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This Replit contains **FinalPDF** (v2.0.0), a rebranded and enhanced WordPress PDF generation plugin with automatic Table of Contents functionality. Originally forked from "PDF Generator for WordPress", it has been completely rebranded for commercial distribution and enhanced with advanced TOC features for knowledge base sites.
+This Replit contains **FinalPDF** (v2.0.1), a rebranded and enhanced WordPress PDF generation plugin with automatic Table of Contents functionality. Originally forked from "PDF Generator for WordPress", it has been completely rebranded for commercial distribution and enhanced with advanced TOC features for knowledge base sites.
 
 ## What This Plugin Does
 
@@ -158,7 +158,14 @@ This plugin is licensed under the GNU General Public License v3.0. See LICENSE.t
 
 ## Version History
 
-**Current Version:** 2.0.0 (FinalPDF - FinalDoc Company Edition)
+**Current Version:** 2.0.1 (FinalPDF - FinalDoc Company Edition)
+- **BUG FIXES:** Admin settings page layout corrected
+  - Fixed two-column layout (labels left, controls right)
+  - Blue save button styling (#2196F3)
+  - Removed conflicting CSS rules that caused misalignment
+  - All form fields properly aligned with consistent spacing
+
+**Previous Version:** 2.0.0 (FinalPDF - FinalDoc Company Edition)
 - **REBRANDED:** Complete rebrand from "PDF Generator for WordPress" to "FinalPDF" by FinalDoc
 - **NEW FEATURE:** Automatic Table of Contents generation
   - Extracts H1-H6 headings from content
