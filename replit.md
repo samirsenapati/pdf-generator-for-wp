@@ -1,19 +1,22 @@
-# PDF Generator for WordPress - Replit Project
+# FinalPDF - Replit Project
 
 ## Project Overview
 
-This Replit contains the **PDF Generator for WordPress** plugin (v1.5.0), a popular WordPress plugin that allows users to generate and download PDF files from WordPress sites. The plugin has been successfully imported from GitHub and set up with a demonstration environment.
+This Replit contains **FinalPDF** (v2.0.0), a rebranded and enhanced WordPress PDF generation plugin with automatic Table of Contents functionality. Originally forked from "PDF Generator for WordPress", it has been completely rebranded for commercial distribution and enhanced with advanced TOC features for knowledge base sites.
 
 ## What This Plugin Does
 
-PDF Generator for WordPress enables:
+FinalPDF enables:
 - Converting WordPress posts, pages, and products into PDF files
+- **NEW:** Automatic Table of Contents generation with clickable navigation
+- **NEW:** Dynamic heading extraction (H1-H6) with page number references
 - Customizable PDF templates with headers, footers, and styling
 - Bulk PDF export functionality
 - User role-based PDF access control
 - Email delivery of PDF files
 - WooCommerce integration for product PDFs
 - WPML compatibility for multilingual sites
+- Perfect for Echo Knowledgebase and documentation sites
 
 ## Project Structure
 
@@ -22,17 +25,19 @@ PDF Generator for WordPress enables:
 ├── wordpress-site/               # WordPress installation directory
 │   ├── wp-content/
 │   │   └── plugins/
-│   │       ├── pdf-generator-for-wp/  # Main plugin directory
-│   │       │   ├── admin/         # Admin interface and settings
-│   │       │   ├── public/        # Frontend display logic
-│   │       │   ├── includes/      # Core plugin classes
-│   │       │   ├── package/       # DomPDF library and dependencies
-│   │       │   └── languages/     # Translation files
+│   │       ├── finalpdf/         # Main plugin directory (REBRANDED)
+│   │       │   ├── admin/        # Admin interface and settings
+│   │       │   ├── public/       # Frontend display logic
+│   │       │   ├── includes/     # Core plugin classes
+│   │       │   │   └── finalpdf-toc-generator.php  # NEW: TOC feature
+│   │       │   ├── package/      # DomPDF library and dependencies
+│   │       │   └── languages/    # Translation files (finalpdf.*)
 │   │       └── sqlite-database-integration/  # SQLite support for WordPress
-│   └── wp-config.php             # WordPress configuration
-├── index.html                    # Landing page with plugin information
-├── start-all.sh                  # Startup script for the web server
-└── .gitignore                    # Git ignore rules
+│   └── wp-config.php            # WordPress configuration
+├── finalpdf.tar.gz              # READY FOR DOWNLOAD: Production plugin package
+├── index.html                   # Landing page with plugin information
+├── start-all.sh                 # Startup script for the web server
+└── .gitignore                   # Git ignore rules
 ```
 
 ## Technical Stack
@@ -153,11 +158,44 @@ This plugin is licensed under the GNU General Public License v3.0. See LICENSE.t
 
 ## Version History
 
-**Current Version:** 1.5.0
+**Current Version:** 2.0.0 (FinalPDF Rebrand)
+- **REBRANDED:** Complete rebrand from "PDF Generator for WordPress" to "FinalPDF"
+- **NEW FEATURE:** Automatic Table of Contents generation
+  - Extracts H1-H6 headings from content
+  - Generates clickable TOC with page references
+  - Customizable TOC depth settings
+  - Professional formatting with nested ordered lists
+- **TOC Integration:** Seamlessly integrated into PDF template pipeline
+- **Commercial Ready:** Fully rebranded for independent distribution
+- All 59 plugin files renamed and updated
+- All function names, hooks, and identifiers updated
 - WooCommerce HPOS compatibility
 - Gutenberg blocks for embed services
 - Template customization improvements
 - Bulk export enhancements
+
+**Previous Version:** 1.5.0
+- Base version before rebrand and TOC feature addition
+
+## How to Download and Install
+
+### Download the Plugin
+The production-ready plugin is available as **finalpdf.tar.gz** (10MB) in the root directory of this Replit.
+
+### Installation Steps
+1. Download `finalpdf.tar.gz` from this Replit
+2. Go to your WordPress Admin → Plugins → Add New → Upload Plugin
+3. Choose the `finalpdf.tar.gz` file
+4. Click "Install Now"
+5. Activate the plugin
+6. Configure under FinalPDF menu in WordPress admin
+
+### Table of Contents Settings
+- Navigate to FinalPDF → Settings
+- Enable/disable TOC generation
+- Set TOC depth (H1-H2 only or H1-H6)
+- Customize TOC title
+- Configure TOC placement in PDFs
 
 ## Notes
 
