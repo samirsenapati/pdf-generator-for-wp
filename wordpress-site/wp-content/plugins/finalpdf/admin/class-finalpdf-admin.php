@@ -3140,7 +3140,7 @@ class FinalPDF_Admin {
                                 'attributes' => array(
                                         'url' => array(
                                                 'type' => 'string',
-                                                'default' => 'https://yourwebsite.com/contact
+                                                'default' => 'https://yourwebsite.com/contact',
                                         ),
                                 ),
                         )
