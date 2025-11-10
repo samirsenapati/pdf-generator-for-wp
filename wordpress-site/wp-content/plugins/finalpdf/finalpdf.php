@@ -12,11 +12,11 @@
  *
  * @wordpress-plugin
  * Plugin Name:       FinalPDF
- * Plugin URI:        https://yourwebsite.com/finalpdf/
+ * Plugin URI:        https://finaldoc.com/finalpdf/
  * Description:       FinalPDF allows you to generate and download PDF files from WordPress sites with automatic Table of Contents generation. Perfect for knowledge bases, documentation, and eCommerce stores.
  * Version:           2.0.0
- * Author:            Your Company Name
- * Author URI:        https://yourwebsite.com/
+ * Author:            FinalDoc
+ * Author URI:        https://finaldoc.com/
  * Text Domain:       finalpdf
  * Domain Path:       /languages
  *
@@ -63,8 +63,8 @@ function define_finalpdf_constants() {
         finalpdf_constants( 'FINALPDF_VERSION', '2.0.0' );
         finalpdf_constants( 'FINALPDF_DIR_PATH', plugin_dir_path( __FILE__ ) );
         finalpdf_constants( 'FINALPDF_DIR_URL', plugin_dir_url( __FILE__ ) );
-        finalpdf_constants( 'FINALPDF_SERVER_URL', 'https://yourwebsite.com' );
-        finalpdf_constants( 'FINALPDF_ITEM_REFERENCE', 'FinalPDF For Wp' );
+        finalpdf_constants( 'FINALPDF_SERVER_URL', 'https://finaldoc.com' );
+        finalpdf_constants( 'FINALPDF_ITEM_REFERENCE', 'FinalPDF' );
 }
 
 /**
@@ -194,9 +194,6 @@ function finalpdf_settings_link( $links ) {
         $my_link = array(
                 '<a href="' . admin_url( 'admin.php?page=finalpdf_menu' ) . '">' . __( 'Settings', 'finalpdf' ) . '</a>',
         );
-        if ( ! in_array( 'finalpdf/finalpdf.php', get_option( 'active_plugins' ), true ) ) {
-                $my_link[] = '<a href="https://yourwebsite.com/product/finalpdf-pro/?utm_source=wpswings-pdf-pro&utm_medium=pdf-org-backend&utm_campaign=go-pro" target="_blank" class="wps-finalpdf-go-pro-link-backend">' . esc_html__( 'GO PRO', 'finalpdf' ) . '</a>';
-        }
         return array_merge( $my_link, $links );
 }
 /**
@@ -208,151 +205,12 @@ function finalpdf_settings_link( $links ) {
  */
 function finalpdf_custom_settings_at_plugin_tab( $links_array, $plugin_file_name ) {
         if ( strpos( $plugin_file_name, basename( __FILE__ ) ) ) {
-                $links_array[] = '<a href="https://yourwebsite.com/demo" target="_blank"><img src="' . esc_html( FINALPDF_DIR_URL ) . 'admin/src/images/Demo.svg" class="wps-info-img" alt="Demo image" style="width: 20px;height: 20px;padding-right:2px;">' . __( 'Demo', 'finalpdf' ) . '</a>';
-                $links_array[] = '<a href="https://yourwebsite.com/documentation/?utm_source=wpswings-pdf-docs&utm_medium=wpswings-org-backend&utm_campaign=documentation" target="_blank"><img src="' . esc_html( FINALPDF_DIR_URL ) . 'admin/src/images/Documentation.svg" class="wps-info-img" alt="documentation image" style="width: 20px;height: 20px;padding-right:2px;">' . __( 'Documentation', 'finalpdf' ) . '</a>';
-                $links_array[] = '<a href="https://www.youtube.com/watch?v=RljECeP3JJk" target="_blank"><img src="' . esc_html( FINALPDF_DIR_URL ) . 'admin/src/images/YouTube32px.svg" class="wps-info-img" alt="documentation image" style="width: 20px;height: 20px;padding-right:2px;">' . __( 'Video', 'finalpdf' ) . '</a>';
-                $links_array[] = '<a href="https://yourwebsite.com/submit-query/?utm_source=wpswings-pdf-support&utm_medium=pdf-org-backend&utm_campaign=submit-query" target="_blank"><img src="' . esc_html( FINALPDF_DIR_URL ) . 'admin/src/images/Support.svg" class="wps-info-img" alt="support image" style="width: 20px;height: 20px;padding-right:2px;">' . __( 'Support', 'finalpdf' ) . '</a>';
-                $links_array[] = '<a href="https://yourwebsite.com/wordpress-woocommerce-solutions/?utm_source=wpswings-pdf-service&utm_medium=pdf-org-backend&utm_campaign=service-page" target="_blank"><img src="' . esc_html( FINALPDF_DIR_URL ) . 'admin/src/images/Services.svg" class="wps-info-img" alt="support image" style="width: 20px;height: 20px;padding-right:2px;">' . __( 'Services', 'finalpdf' ) . '</a>';
+                $links_array[] = '<a href="https://finaldoc.com/finalpdf/documentation/" target="_blank"><img src="' . esc_html( FINALPDF_DIR_URL ) . 'admin/src/images/Documentation.svg" class="wps-info-img" alt="documentation image" style="width: 20px;height: 20px;padding-right:2px;">' . __( 'Documentation', 'finalpdf' ) . '</a>';
+                $links_array[] = '<a href="https://finaldoc.com/support/" target="_blank"><img src="' . esc_html( FINALPDF_DIR_URL ) . 'admin/src/images/Support.svg" class="wps-info-img" alt="support image" style="width: 20px;height: 20px;padding-right:2px;">' . __( 'Support', 'finalpdf' ) . '</a>';
         }
         return $links_array;
 }
 add_filter( 'plugin_row_meta', 'finalpdf_custom_settings_at_plugin_tab', 10, 2 );
-
-
-// Update now link in pro.
-
-if ( true === $finalpdf_old_plugin_exists ) {
-
-        add_action( 'admin_notices', 'wps_finalpdf_check_and_inform_update' );
-        /**
-         * Check update if pro is old.
-         */
-        function wps_finalpdf_check_and_inform_update() {
-
-                $update_file = plugin_dir_path( dirname( __FILE__ ) ) . 'finalpdf/class-mwb-finalpdf-update.php';
-
-                        // If present but not active.
-                if ( ! is_plugin_active( 'finalpdf/finalpdf.php' ) ) {
-                        if ( file_exists( $update_file ) ) {
-                                        $mwb_wpg_license_key = get_option( 'mwb_wpg_license_key', '' );
-                                        ! defined( 'WORDPRESS_PDF_GENERATOR_LICENSE_KEY' ) && define( 'WORDPRESS_PDF_GENERATOR_LICENSE_KEY', $mwb_wpg_license_key );
-                                        ! defined( 'WORDPRESS_PDF_GENERATOR_BASE_FILE' ) && define( 'WORDPRESS_PDF_GENERATOR_BASE_FILE', 'finalpdf/finalpdf.php' );
-                                        ! defined( 'WORDPRESS_PDF_GENERATOR_VERSION' ) && define( 'WORDPRESS_PDF_GENERATOR_VERSION', '3.0.4' );
-
-                        }
-                        require_once $update_file;
-                }
-                if ( defined( 'WORDPRESS_PDF_GENERATOR_BASE_FILE' ) ) {
-
-                                $wps_finalpdf_version_old_pro = new Mwb_WordPress_Pdf_Generator_Update();
-                                $wps_finalpdf_version_old_pro->mwb_check_update();
-                }
-        }
-}
-
-// Ending noticed code/////////////////////////////////////.
-
-add_action( 'after_plugin_row_finalpdf/finalpdf.php', 'wps_finalpdf_old_upgrade_notice', 0, 3 );
-/**
- * Migration to ofl pro plugin.
- *
- * @param string $plugin_file Path to the plugin file relative to the plugins directory.
- * @param array  $plugin_data An array of plugin data.
- * @param string $status Status filter currently applied to the plugin list.
- */
-function wps_finalpdf_old_upgrade_notice( $plugin_file, $plugin_data, $status ) {
-
-        global $finalpdf_old_plugin_exists;
-        if ( $finalpdf_old_plugin_exists ) {
-                ?>
-                <tr class="plugin-update-tr active notice-warning notice-alt">
-                <td colspan="4" class="plugin-update colspanchange">
-                        <div class="notice notice-error inline update-message notice-alt">
-                                <p class='wps-notice-title wps-notice-section'>
-                                        <strong><?php esc_html_e( 'This plugin will not work anymore correctly.', 'finalpdf' ); ?></strong><br>
-                                        <?php esc_html_e( 'We highly recommend to update to latest pro version and once installed please migrate the existing settings.', 'finalpdf' ); ?><br>
-                                        <?php esc_html_e( 'If you are not getting automatic update now button here, then don\'t worry you will get in within 24 hours. If you still not get it please visit to your account dashboard and install it manually or connect to our support.', 'finalpdf' ); ?>
-                                </p>
-                        </div>
-                </td>
-        </tr>
-        <style>
-        .wps-notice-section > p:before {
-                                content: none;
-                        }
-                </style>
-                        <?php
-        }
-}
-add_action( 'admin_notices', 'wps_finalpdf_migrate_notice', 99 );
-/**
- * Migration to new domain notice on main dashboard notice.
- */
-function wps_finalpdf_migrate_notice() {
-        // phpcs:disable WordPress.Security.NonceVerification.Recommended
-        $tab = isset( $_GET['page'] ) ? sanitize_text_field( wp_unslash( $_GET['page'] ) ) : '';
-        global $finalpdf_old_plugin_exists;
-
-        if ( 'finalpdf_menu' === $tab ) {
-
-                ?>
-                <input type="hidden" class="treat-button">
-                <?php
-                if ( $finalpdf_old_plugin_exists ) {
-
-                        ?>
-                        <tr class="plugin-update-tr active notice-warning notice-alt">
-                                        <td colspan="4" class="plugin-update colspanchange">
-                                                <div class="notice notice-warning inline update-message notice-alt">
-                                                        <p class='wps-notice-title wps-notice-section'>
-                                                                <?php esc_html_e( 'If You are using Premium Version of PDF plugin then please update Pro plugin from plugin page by ', 'finalpdf' ); ?><a style="text-decoration:none;" href="<?php echo esc_url( admin_url( 'plugins.php' ) ); ?>"><?php esc_html_e( 'Click Here', 'finalpdf' ); ?></strong></a>
-                                                        </p>
-                                                </div>
-                                        </td>
-                                </tr>
-                        <style>
-                                .wps-notice-section > p:before {
-                                                content: none;
-                                }
-                        </style>
-                                <?php
-                }
-        }
-}
-add_action( 'after_plugin_row_' . plugin_basename( __FILE__ ), 'wps_finalpdf_pro_pdf_upgrade_notice', 0, 3 );
-
-/**
- * Displays notice to upgrade to .
- *
- * @param string $plugin_file Path to the plugin file relative to the plugins directory.
- * @param array  $plugin_data An array of plugin data.
- * @param string $status Status filter currently applied to the plugin list.
- */
-function wps_finalpdf_pro_pdf_upgrade_notice( $plugin_file, $plugin_data, $status ) {
-        $plugin_admin = new FinalPDF_Admin( 'finalpdf', '1.0.7' );
-        $count        = $plugin_admin->wps_finalpdf_get_count( 'settings' );
-        $key3 = get_option( 'wps_finalpdf_activated_timestamp' );
-        if ( ! empty( $count ) && ( empty( $key3 ) ) ) {
-                ?>
-
-                <tr class="plugin-update-tr active notice-warning notice-alt">
-                        <td colspan="4" class="plugin-update colspanchange">
-                                <div class="notice notice-error inline update-message notice-alt">
-                                        <p class='wps-notice-title wps-notice-section'>
-                                                <?php esc_html_e( 'The latest update includes some substantial changes across different areas of the plugin. Hence, if you are not a new user then', 'finalpdf' ); ?><strong><?php esc_html_e( ' Please migrate your old data and settings from ', 'finalpdf' ); ?><a style="text-decoration:none;" href="<?php echo esc_url( admin_url( 'admin.php?page=finalpdf_menu' ) ); ?>"><?php esc_html_e( 'Dashboard', 'finalpdf' ); ?></strong></a><?php esc_html_e( ' page then Click On Start Import Button.', 'finalpdf' ); ?>
-                                        </p>
-                                </div>
-                        </td>
-                </tr>
-                <style>
-                        .wps-notice-section > p:before {
-                                content: none;
-                        }
-                </style>
-
-                <?php
-        }
-}
 
 /**
  * Description: Embeds a Calendly Meeting.
