@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Generator for WordPress - Replit Demo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+            line-height: 1.6;
+            color: #444;
+            background: #f5f5f5;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 40px;
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        
+        h1 {
+            color: #23282d;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #0073aa;
+        }
+        
+        h2 {
+            color: #23282d;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        
+        .badge {
+            display: inline-block;
+            background: #0073aa;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 3px;
+            font-size: 12px;
+            margin-left: 10px;
+            vertical-align: middle;
+        }
+        
+        ul {
+            margin: 15px 0 15px 30px;
+        }
+        
+        li {
+            margin: 8px 0;
+        }
+        
+        .info-box {
+            background: #f0f6fc;
+            border-left: 4px solid #0073aa;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        
+        .warning-box {
+            background: #fff8e5;
+            border-left: 4px solid #f0b849;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        
+        code {
+            background: #f5f5f5;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+        }
+        
+        .button {
+            display: inline-block;
+            background: #0073aa;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 4px;
+            margin: 10px 10px 10px 0;
+            transition: background 0.3s;
+        }
+        
+        .button:hover {
+            background: #005a87;
+        }
+        
+        .button.secondary {
+            background: #50575e;
+        }
+        
+        .button.secondary:hover {
+            background: #32373c;
+        }
+        
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        
+        .feature-card {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 6px;
+            border: 1px solid #e0e0e0;
+        }
+        
+        .feature-card h3 {
+            color: #0073aa;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        
+        footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            text-align: center;
+            color: #666;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>
+            PDF Generator for WordPress
+            <span class="badge">v1.5.0</span>
+        </h1>
+        
+        <div class="info-box">
+            <p><strong>Welcome to the PDF Generator for WordPress plugin!</strong></p>
+            <p>This is a WordPress plugin that allows you to generate and download PDF files from WordPress sites. The plugin files have been successfully imported to Replit.</p>
+        </div>
+        
+        <h2>About This Plugin</h2>
+        <p>PDF Generator for WordPress allows you to convert posts, pages, and products into PDF files for easy sharing and distribution. The plugin integrates seamlessly with WordPress and WooCommerce.</p>
+        
+        <div class="feature-grid">
+            <div class="feature-card">
+                <h3>🎨 Customizable Templates</h3>
+                <p>Choose from multiple page sizes (A1, A2, A4, etc.) and customize colors, fonts, and layouts.</p>
+            </div>
+            <div class="feature-card">
+                <h3>📄 Multiple Content Types</h3>
+                <p>Generate PDFs from posts, pages, blogs, and WooCommerce products.</p>
+            </div>
+            <div class="feature-card">
+                <h3>⚡ Bulk Export</h3>
+                <p>Export multiple posts or products to PDF in bulk with the default template.</p>
+            </div>
+            <div class="feature-card">
+                <h3>🔧 Advanced Features</h3>
+                <p>Includes watermarks, custom headers/footers, meta fields, and role-based visibility.</p>
+            </div>
+        </div>
+        
+        <h2>Key Features</h2>
+        <ul>
+            <li>Generate PDFs from WordPress posts, pages, and products</li>
+            <li>Customizable PDF templates with header, footer, and body settings</li>
+            <li>Multiple page sizes and orientations</li>
+            <li>Bulk PDF export functionality</li>
+            <li>User role-based PDF icon visibility</li>
+            <li>Email PDF files to users</li>
+            <li>Shortcode support for embedding PDFs</li>
+            <li>WPML compatible for multilingual sites</li>
+            <li>WooCommerce HPOS compatible</li>
+            <li>RTL support for Hebrew and Arabic languages</li>
+        </ul>
+        
+        <div class="warning-box">
+            <h3 style="margin-top: 0;">⚠️ WordPress Installation Status</h3>
+            <p>This plugin requires a full WordPress installation to function. A WordPress instance has been included in this Replit for reference.</p>
+            <p><strong>Note:</strong> Due to database limitations in the Replit environment, the WordPress instance cannot be fully initialized. However, all plugin source code is accessible and ready for deployment to a production WordPress site.</p>
+            <p><strong>Recommendation:</strong> Use the plugin files from <code>wordpress-site/wp-content/plugins/pdf-generator-for-wp/</code> and install them on a standard WordPress hosting environment with MySQL/MariaDB for full functionality.</p>
+        </div>
+        
+        <h2>Installation Instructions</h2>
+        <p>To use this plugin in a production WordPress environment:</p>
+        <ol style="margin-left: 30px;">
+            <li>Download the plugin files from the <code>wordpress-site/wp-content/plugins/pdf-generator-for-wp</code> directory</li>
+            <li>Upload to your WordPress installation's <code>wp-content/plugins/</code> directory</li>
+            <li>Activate the plugin from the WordPress admin panel</li>
+            <li>Configure settings under <strong>PDF Generator</strong> in the WordPress admin menu</li>
+        </ol>
+        
+        <h2>Technical Details</h2>
+        <ul>
+            <li><strong>PHP Version Required:</strong> 7.4 or higher</li>
+            <li><strong>WordPress Version:</strong> 5.5.0 or higher</li>
+            <li><strong>WooCommerce:</strong> 5.2.0 or higher (optional)</li>
+            <li><strong>PDF Library:</strong> DomPDF (included in <code>package/lib/dompdf/</code>)</li>
+        </ul>
+        
+        <h2>Plugin Structure</h2>
+        <ul>
+            <li><code>admin/</code> - Admin interface and backend functionality</li>
+            <li><code>public/</code> - Frontend display and user-facing features</li>
+            <li><code>includes/</code> - Core plugin classes and functions</li>
+            <li><code>package/lib/dompdf/</code> - PDF generation library</li>
+            <li><code>languages/</code> - Translation files</li>
+        </ul>
+        
+        <h2>Resources</h2>
+        <div>
+            <a href="https://wordpress.org/plugins/pdf-generator-for-wp/" class="button" target="_blank">WordPress.org Plugin Page</a>
+            <a href="https://docs.wpswings.com/pdf-generator-for-wp/" class="button" target="_blank">Documentation</a>
+            <a href="https://demo.wpswings.com/pdf-generator-for-wp-pro/" class="button secondary" target="_blank">Live Demo</a>
+        </div>
+        
+        <div class="info-box" style="margin-top: 30px;">
+            <p><strong>📁 Plugin Files Location:</strong></p>
+            <p>The complete plugin source code is available in: <code>wordpress-site/wp-content/plugins/pdf-generator-for-wp/</code></p>
+            <p>You can explore, modify, and test the plugin files directly in this Replit.</p>
+        </div>
+        
+        <footer>
+            <p>PDF Generator for WordPress v1.5.0 by WP Swings</p>
+            <p>Licensed under GNU General Public License v3.0</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+# MySQL/MariaDB
+mysql-data/
+*.sock
+*.pid
+
+# WordPress
+wordpress-site/wp-content/uploads/
+wordpress-site/wp-content/cache/
+wordpress-site/wp-content/upgrade/
+wordpress-site/wp-content/backup-db/
+wordpress-site/wp-content/backups/
+wordpress-site/wp-content/blogs.dir/
+wordpress-site/wp-content/database/
+*.log
+
+# Replit
+.config/
+.cache/
+.local/
+.replit
+replit.nix
+
+# Temporary files
+*~
+.DS_Store
+Thumbs.db
