@@ -34,7 +34,7 @@ FinalPDF enables:
 │   │       │   └── languages/    # Translation files (finalpdf.*)
 │   │       └── sqlite-database-integration/  # SQLite support for WordPress
 │   └── wp-config.php            # WordPress configuration
-├── finalpdf.tar.gz              # READY FOR DOWNLOAD: Production plugin package
+├── finalpdf.zip                 # READY FOR DOWNLOAD: Production plugin package
 ├── index.html                   # Landing page with plugin information
 ├── start-all.sh                 # Startup script for the web server
 └── .gitignore                   # Git ignore rules
@@ -180,12 +180,12 @@ This plugin is licensed under the GNU General Public License v3.0. See LICENSE.t
 ## How to Download and Install
 
 ### Download the Plugin
-The production-ready plugin is available as **finalpdf.tar.gz** (10MB) in the root directory of this Replit.
+The production-ready plugin is available as **finalpdf.zip** (10MB) in the root directory of this Replit.
 
 ### Installation Steps
-1. Download `finalpdf.tar.gz` from this Replit
+1. Download `finalpdf.zip` from this Replit
 2. Go to your WordPress Admin → Plugins → Add New → Upload Plugin
-3. Choose the `finalpdf.tar.gz` file
+3. Choose the `finalpdf.zip` file
 4. Click "Install Now"
 5. Activate the plugin
 6. Configure under FinalPDF menu in WordPress admin
