@@ -158,8 +158,8 @@ This plugin is licensed under the GNU General Public License v3.0. See LICENSE.t
 
 ## Version History
 
-**Current Version:** 2.0.0 (FinalPDF Rebrand)
-- **REBRANDED:** Complete rebrand from "PDF Generator for WordPress" to "FinalPDF"
+**Current Version:** 2.0.0 (FinalPDF - FinalDoc Company Edition)
+- **REBRANDED:** Complete rebrand from "PDF Generator for WordPress" to "FinalPDF" by FinalDoc
 - **NEW FEATURE:** Automatic Table of Contents generation
   - Extracts H1-H6 headings from content
   - Generates clickable TOC with page references
@@ -167,8 +167,17 @@ This plugin is licensed under the GNU General Public License v3.0. See LICENSE.t
   - Professional formatting with nested ordered lists
 - **TOC Integration:** Seamlessly integrated into PDF template pipeline
 - **Commercial Ready:** Fully rebranded for independent distribution
-- All 59 plugin files renamed and updated
-- All function names, hooks, and identifiers updated
+  - All promotional "Go Pro" notices removed
+  - All upgrade prompts and upsell links removed
+  - All settings tabs now visible and accessible (no pro/free gating)
+  - Migration/activation warnings removed for clean user experience
+- **Branding Updates:**
+  - Company: FinalDoc (finaldoc.com)
+  - Product: FinalPDF
+  - Support: support@finaldoc.com
+  - All 59 plugin files renamed and updated
+  - All function names, hooks, and identifiers updated
+  - All URLs pointing to FinalDoc resources
 - WooCommerce HPOS compatibility
 - Gutenberg blocks for embed services
 - Template customization improvements
