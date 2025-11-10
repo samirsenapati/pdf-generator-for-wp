@@ -543,6 +543,8 @@ class FinalPDF_Admin {
                 $finalpdf_show_post_type_icons_for_user_role = array_key_exists( 'finalpdf_show_post_type_icons_for_user_role', $finalpdf_display_settings ) ? $finalpdf_display_settings['finalpdf_show_post_type_icons_for_user_role'] : '';
 
                 $finalpdf_template_color_option                 = array_key_exists( 'finalpdf_template_color_option', $finalpdf_display_settings ) ? $finalpdf_display_settings['finalpdf_template_color_option'] : '';
+                $finalpdf_bulk_download_enable                  = array_key_exists( 'finalpdf_bulk_download_enable', $finalpdf_display_settings ) ? $finalpdf_display_settings['finalpdf_bulk_download_enable'] : '';
+                $finalpdf_print_enable_org_tag                  = array_key_exists( 'finalpdf_print_enable_org_tag', $finalpdf_display_settings ) ? $finalpdf_display_settings['finalpdf_print_enable_org_tag'] : '';
 
                 global $wp_roles;
                 $all_roles = $wp_roles->roles;
@@ -606,8 +608,9 @@ class FinalPDF_Admin {
                                 'type'        => 'radio-switch',
                                 'description' => __( 'Enable this to give access to bulk download PDF', 'finalpdf' ),
                                 'id'          => 'finalpdf_bulk_download_enable',
-                                'value'       => '$finalpdf_bulk_download_enable',
-                                'class'       => 'wps_finalpdf_pro_tag',
+                                'value'       => $finalpdf_bulk_download_enable,
+                                'class'       => 'finalpdf_bulk_download_enable',
+                                'name'        => 'finalpdf_bulk_download_enable',
                                 'options'     => array(
                                         'yes' => __( 'YES', 'finalpdf' ),
                                         'no'  => __( 'NO', 'finalpdf' ),
@@ -618,8 +621,9 @@ class FinalPDF_Admin {
                                 'type'        => 'radio-switch',
                                 'description' => __( 'Enable this to print current window screen', 'finalpdf' ),
                                 'id'          => 'finalpdf_print_enable_org_tag',
-                                'value'       => 'finalpdf_print_enable_org_tag',
-                                'class'       => 'wps_finalpdf_pro_tag',
+                                'value'       => $finalpdf_print_enable_org_tag,
+                                'class'       => 'finalpdf_print_enable_org_tag',
+                                'name'        => 'finalpdf_print_enable_org_tag',
                                 'options'     => array(
                                         'yes' => __( 'YES', 'finalpdf' ),
                                         'no'  => __( 'NO', 'finalpdf' ),
