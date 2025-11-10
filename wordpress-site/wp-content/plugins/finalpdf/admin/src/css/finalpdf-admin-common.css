@@ -76,14 +76,19 @@
     border-radius: 5px;
 }
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 768px) {
     .wps-header-title {
         max-width: unset;
     }
 
     .wps-form-group {
         flex-direction: column;
-        flex-wrap: wrap;
+    }
+
+    .wps-form-group__label,
+    .wps-form-group__control {
+        flex: 0 0 100%;
+        max-width: 100%;
     }
 
     .wps-header-container {

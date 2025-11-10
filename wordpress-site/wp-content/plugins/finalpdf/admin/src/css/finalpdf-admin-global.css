@@ -266,18 +266,20 @@ select {
 
 .wps-form-group {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     margin: 0 -15px 35px;
+    align-items: flex-start;
 }
 
 .wps-form-group__label {
-    flex: 0 0 100%;
+    flex: 0 0 200px;
     max-width: 200px;
     padding: 0 15px;
 }
 
 .wps-form-group__control {
-    flex: 0 0 100%;
+    flex: 1 1 calc(100% - 200px);
     max-width: calc(100% - 200px);
     padding: 0 15px;
 }
