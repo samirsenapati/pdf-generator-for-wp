@@ -69,7 +69,7 @@ FinalPDF enables:
 Simply run the Replit - the landing page at `/` provides comprehensive information about the plugin, its features, and structure.
 
 ### Option 2: Explore Plugin Code
-Navigate to `wordpress-site/wp-content/plugins/pdf-generator-for-wp/` to:
+Navigate to `wordpress-site/wp-content/plugins/finalpdf/` to:
 - Review the plugin architecture
 - Examine PDF generation logic
 - Study the admin interface implementation
@@ -78,15 +78,14 @@ Navigate to `wordpress-site/wp-content/plugins/pdf-generator-for-wp/` to:
 ### Option 3: Use in Production WordPress
 To deploy this plugin to a real WordPress site:
 
-1. Download the plugin directory:
+1. Download the plugin ZIP file:
    ```
-   wordpress-site/wp-content/plugins/pdf-generator-for-wp/
+   finalpdf-2.0.5.zip
    ```
 
-2. Upload to your WordPress installation:
-   ```
-   /wp-content/plugins/pdf-generator-for-wp/
-   ```
+2. Upload to your WordPress installation via:
+   - WordPress Admin → Plugins → Add New → Upload Plugin
+   - Or extract to: `/wp-content/plugins/finalpdf/`
 
 3. Activate from WordPress Admin → Plugins
 
@@ -96,9 +95,9 @@ To deploy this plugin to a real WordPress site:
 
 | File/Directory | Purpose |
 |---------------|---------|
-| `pdf-generator-for-wp.php` | Main plugin bootstrap file |
-| `admin/class-pdf-generator-for-wp-admin.php` | Admin functionality |
-| `includes/class-pdf-generator-for-wp.php` | Core plugin class |
+| `finalpdf.php` | Main plugin bootstrap file |
+| `admin/class-finalpdf-admin.php` | Admin functionality |
+| `includes/class-finalpdf.php` | Core plugin class |
 | `package/lib/dompdf/` | PDF generation library |
 | `admin/partials/pdf_templates/` | PDF template files |
 
@@ -132,7 +131,7 @@ The server starts automatically with the configured workflow. To manually start:
 ```
 
 ### Modifying the Plugin
-1. Edit files in `wordpress-site/wp-content/plugins/pdf-generator-for-wp/`
+1. Edit files in `wordpress-site/wp-content/plugins/finalpdf/`
 2. Changes are immediately available (no build process required)
 3. Test in a full WordPress environment for complete functionality
 
@@ -147,10 +146,12 @@ The deployment serves the informational landing page. For full WordPress functio
 
 ## Resources
 
-- **WordPress.org:** https://wordpress.org/plugins/pdf-generator-for-wp/
-- **Documentation:** https://docs.wpswings.com/pdf-generator-for-wp/
-- **Live Demo:** https://demo.wpswings.com/pdf-generator-for-wp-pro/
-- **Support:** https://wpswings.com/submit-query/
+- **Product Name:** FinalPDF
+- **Company Name:** FinalDoc
+- **Support Email:** hello@finaldoc.io (placeholder - configure for your use)
+- **Website:** finaldoc.io (placeholder - configure for your use)
+
+Note: This is a rebranded plugin ready for your own commercial distribution. Update support contacts and URLs as needed for your business.
 
 ## License
 
