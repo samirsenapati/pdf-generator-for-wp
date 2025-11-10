@@ -59,7 +59,7 @@ function wps_embed_sources_page() {
 <?php } ?>
 
 
-                                                <label class="wps-switch <?php echo $is_disabled ? 'wps-switch-disable' : ''; ?>">
+                                                <label class="wps-switch">
                                                         <input type="checkbox" data-source="<?php echo esc_attr( $source ); ?>" <?php echo 'on' === $value ? 'checked' : ''; ?>>
                                                         <span class="slider"></span>
                                                 </label>
