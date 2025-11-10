@@ -104,23 +104,16 @@ class FinalPDF_Admin {
                         wp_enqueue_script( 'wps-finalpdf-metarial-lite', FINALPDF_DIR_URL . 'package/lib/material-design/material-lite.min.js', array(), time(), false );
 
                         wp_register_script( $this->plugin_name . 'admin-js', FINALPDF_DIR_URL . 'admin/src/js/finalpdf-admin.js', array( 'jquery', 'wps-finalpdf-select2', 'wps-finalpdf-metarial-js', 'wps-finalpdf-metarial-js2', 'wps-finalpdf-metarial-lite' ), $this->version, false );
-                        $wps_finalpdf_plugin_list = get_option( 'active_plugins' );
-                        $wps_finalpdf_is_pro_active = false;
-                        $wps_finalpdf_plugin = 'finalpdf/finalpdf.php';
-                        if ( in_array( $wps_finalpdf_plugin, $wps_finalpdf_plugin_list ) ) {
-                                $wps_finalpdf_is_pro_active = true;
-                        }
-                        $license_check = get_option( 'wps_finalpdf_license_check', 0 );
 
                         wp_localize_script(
                                 $this->plugin_name . 'admin-js',
-                                'finalpdf_admin_param',
+                                'pgfw_admin_param',
                                 array(
                                         'ajaxurl'             => admin_url( 'admin-ajax.php' ),
                                         'reloadurl'           => admin_url( 'admin.php?page=finalpdf_menu' ),
                                         'finalpdf_gen_tab_enable' => get_option( 'finalpdf_radio_switch_demo' ),
-                                        'is_pro_active' => $wps_finalpdf_is_pro_active,
-                                        'license_check' => $license_check,
+                                        'is_pro_active' => true,
+                                        'license_check' => true,
                                         'nonce'         => wp_create_nonce( 'wps_finalpdf_embed_ajax_nonce' ),
                                 )
                         );
@@ -175,7 +168,7 @@ class FinalPDF_Admin {
         public function finalpdf_options_page() {
                 global $submenu;
                 if ( empty( $GLOBALS['admin_page_hooks']['wps-plugins'] ) ) {
-                        add_menu_page( 'Your Company', 'Your Company', 'manage_options', 'wps-plugins', array( $this, 'wps_plugins_listing_page' ), FINALPDF_DIR_URL . 'admin/src/images/finalpdf_logo.png', 15 );
+                        add_menu_page( 'FinalDoc', 'FinalDoc', 'manage_options', 'wps-plugins', array( $this, 'wps_plugins_listing_page' ), FINALPDF_DIR_URL . 'admin/src/images/finalpdf_logo.png', 15 );
 
                         add_submenu_page( 'wps-plugins', 'Home', 'Home', 'manage_options', 'home', array( $this, 'wps_finalpdf_welcome_callback_function' ), 1 );
                         $finalpdf_menus = apply_filters( 'wps_add_plugins_menus_array', array() );
