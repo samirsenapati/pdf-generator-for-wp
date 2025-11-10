@@ -72,12 +72,12 @@ class FinalPDF_Admin {
                         wp_enqueue_style( $this->plugin_name . '-admin-global', FINALPDF_DIR_URL . 'admin/src/css/finalpdf-admin-global.css', array( 'wps-finalpdf-meterial-icons-css' ), time(), 'all' );
 
                         wp_enqueue_style( 'wp-color-picker' );
-                        wp_enqueue_style( 'pgfw-admin-commomn-css', FINALPDF_DIR_URL . 'admin/src/css/finalpdf-admin-common.css', array(), $this->version, 'all' );
-                        wp_enqueue_style( 'pgfw-datatable-css', FINALPDF_DIR_URL . 'package/lib/datatable/datatables.min.css', array(), $this->version, 'all' );
-                        wp_enqueue_style( 'pgfw-overview-form-css', FINALPDF_DIR_URL . 'admin/src/css/wps-admin.css', array(), $this->version, 'all' );
-                        wp_enqueue_style( 'wps--admin--min-css', FINALPDF_DIR_URL . 'admin/src/css/pdf-admin-home.min.css', array(), $this->version, 'all' );
+                        wp_enqueue_style( 'pgfw-admin-commomn-css', FINALPDF_DIR_URL . 'admin/src/css/finalpdf-admin-common.css', array(), time(), 'all' );
+                        wp_enqueue_style( 'pgfw-datatable-css', FINALPDF_DIR_URL . 'package/lib/datatable/datatables.min.css', array(), time(), 'all' );
+                        wp_enqueue_style( 'pgfw-overview-form-css', FINALPDF_DIR_URL . 'admin/src/css/wps-admin.css', array(), time(), 'all' );
+                        wp_enqueue_style( 'wps--admin--min-css', FINALPDF_DIR_URL . 'admin/src/css/pdf-admin-home.min.css', array(), time(), 'all' );
                 }
-                wp_enqueue_style( 'pgfw-admin-custom-css', FINALPDF_DIR_URL . 'admin/src/css/finalpdf-admin-custom.css', array(), $this->version, 'all' );
+                wp_enqueue_style( 'pgfw-admin-custom-css', FINALPDF_DIR_URL . 'admin/src/css/finalpdf-admin-custom.css', array(), time(), 'all' );
         }
 
         /**

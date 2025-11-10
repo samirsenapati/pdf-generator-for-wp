@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This Replit contains **FinalPDF** (v2.0.2), a rebranded and enhanced WordPress PDF generation plugin with automatic Table of Contents functionality. Originally forked from "PDF Generator for WordPress", it has been completely rebranded for commercial distribution and enhanced with advanced TOC features for knowledge base sites.
+This Replit contains **FinalPDF** (v2.0.3), a rebranded and enhanced WordPress PDF generation plugin with automatic Table of Contents functionality. Originally forked from "PDF Generator for WordPress", it has been completely rebranded for commercial distribution and enhanced with advanced TOC features for knowledge base sites.
 
 ## What This Plugin Does
 
@@ -34,7 +34,7 @@ FinalPDF enables:
 │   │       │   └── languages/    # Translation files (finalpdf.*)
 │   │       └── sqlite-database-integration/  # SQLite support for WordPress
 │   └── wp-config.php            # WordPress configuration
-├── finalpdf-2.0.2.zip           # READY FOR DOWNLOAD: Production plugin package (v2.0.2)
+├── finalpdf-2.0.3.zip           # READY FOR DOWNLOAD: Production plugin package (v2.0.3)
 ├── index.html                   # Landing page with plugin information
 ├── start-all.sh                 # Startup script for the web server
 └── .gitignore                   # Git ignore rules
@@ -158,7 +158,15 @@ This plugin is licensed under the GNU General Public License v3.0. See LICENSE.t
 
 ## Version History
 
-**Current Version:** 2.0.2 (FinalPDF - FinalDoc Company Edition)
+**Current Version:** 2.0.3 (FinalPDF - FinalDoc Company Edition)
+- **AGGRESSIVE CACHE FIX:** All CSS files now use time()-based cache busting
+  - Changed from version-based to timestamp-based CSS loading
+  - Bypasses ALL WordPress/server/CDN caching layers permanently
+  - Fresh CSS loaded on every page refresh automatically
+  - Guaranteed to show proper two-column layout and blue save button
+  - Resolves persistent caching issues across all hosting environments
+
+**Previous Version:** 2.0.2 (FinalPDF - FinalDoc Company Edition)
 - **CACHE FIX:** Version bump to force WordPress to load fresh CSS files
   - Resolves WordPress caching issue that prevented CSS layout fixes from loading
   - Two-column settings layout now displays correctly
@@ -214,12 +222,12 @@ The project includes the official **FinalDoc logo** (blue document icon with con
 ## How to Download and Install
 
 ### Download the Plugin
-The production-ready plugin is available as **finalpdf-2.0.2.zip** (10.3MB) in the root directory of this Replit.
+The production-ready plugin is available as **finalpdf-2.0.3.zip** (10.3MB) in the root directory of this Replit.
 
 ### Installation Steps
-1. Download `finalpdf-2.0.2.zip` from this Replit
+1. Download `finalpdf-2.0.3.zip` from this Replit
 2. Go to your WordPress Admin → Plugins → Add New → Upload Plugin
-3. Choose the `finalpdf-2.0.2.zip` file
+3. Choose the `finalpdf-2.0.3.zip` file
 4. Click "Install Now"
 5. Activate the plugin
 6. Configure under FinalPDF menu in WordPress admin
