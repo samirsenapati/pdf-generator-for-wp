@@ -82,7 +82,7 @@ if ( $finalpdf_save_check_flag ) {
                         do_action( 'wps_finalpdf_before_general_settings_form' );
                         // if submenu is directly clicked on woocommerce.
                         if ( empty( $finalpdf_active_tab ) ) {
-                                $finalpdf_active_tab = 'wps_finalpdf_plug_general';
+                                $finalpdf_active_tab = 'finalpdf-general';
                         }
 
                         // look for the path based on the tab id in the admin templates.
