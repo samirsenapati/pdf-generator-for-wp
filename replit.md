@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This Replit contains **FinalPDF** (v2.0.5), a rebranded and enhanced WordPress PDF generation plugin with automatic Table of Contents functionality. Originally forked from "PDF Generator for WordPress", it has been completely rebranded for commercial distribution and enhanced with advanced TOC features for knowledge base sites.
+This Replit contains **FinalPDF** (v2.0.6), a rebranded and enhanced WordPress PDF generation plugin with automatic Table of Contents functionality. Originally forked from "PDF Generator for WordPress", it has been completely rebranded for commercial distribution and enhanced with advanced TOC features for knowledge base sites.
 
 ## What This Plugin Does
 
@@ -34,7 +34,7 @@ FinalPDF enables:
 │   │       │   └── languages/    # Translation files (finalpdf.*)
 │   │       └── sqlite-database-integration/  # SQLite support for WordPress
 │   └── wp-config.php            # WordPress configuration
-├── finalpdf-2.0.5.zip           # READY FOR DOWNLOAD: Production plugin package (v2.0.5)
+├── finalpdf-2.0.6.zip           # READY FOR DOWNLOAD: Production plugin package (v2.0.6)
 ├── index.html                   # Landing page with plugin information
 ├── start-all.sh                 # Startup script for the web server
 └── .gitignore                   # Git ignore rules
@@ -80,7 +80,7 @@ To deploy this plugin to a real WordPress site:
 
 1. Download the plugin ZIP file:
    ```
-   finalpdf-2.0.5.zip
+   finalpdf-2.0.6.zip
    ```
 
 2. Upload to your WordPress installation via:
@@ -159,7 +159,15 @@ This plugin is licensed under the GNU General Public License v3.0. See LICENSE.t
 
 ## Version History
 
-**Current Version:** 2.0.5 (FinalPDF - FinalDoc Company Edition)
+**Current Version:** 2.0.6 (FinalPDF - FinalDoc Company Edition)
+- **SETTINGS UI FULLY FIXED:** Default tab issue resolved
+  - Fixed legacy tab ID that prevented settings pages from loading
+  - Default tab was using old plugin name prefix 'wps_finalpdf_plug_general' instead of 'finalpdf-general'
+  - All settings pages now work correctly: General Settings, PDF Settings, Advanced, Meta Fields, etc.
+  - Cover page and watermark now configurable via settings UI
+  - Ready for production use
+
+**Previous Version:** 2.0.5 (FinalPDF - FinalDoc Company Edition)
 - **CRITICAL FIX:** Blank settings page issue resolved
   - Fixed backwards `is_plugin_active()` checks that prevented tabs from loading
   - All settings tabs now register correctly: Taxonomy, Layout, Logs, Invoice
