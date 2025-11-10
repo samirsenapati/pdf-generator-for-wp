@@ -158,8 +158,16 @@ This plugin is licensed under the GNU General Public License v3.0. See LICENSE.t
 
 ## Version History
 
-**Current Version:** 2.0.4 (FinalPDF - FinalDoc Company Edition)
-- **CRITICAL FIX:** Two-column layout now works correctly
+**Current Version:** 2.0.5 (FinalPDF - FinalDoc Company Edition)
+- **CRITICAL FIX:** Blank settings page issue resolved
+  - Fixed backwards `is_plugin_active()` checks that prevented tabs from loading
+  - All settings tabs now register correctly: Taxonomy, Layout, Logs, Invoice
+  - Removed all "(PRO)" restrictions - all features now accessible
+  - All shortcodes and embed sources fully functional
+  - Settings pages now display content instead of blank screens
+
+**Previous Version:** 2.0.4 (FinalPDF - FinalDoc Company Edition)
+- **LAYOUT FIX:** Two-column layout now works correctly
   - Fixed flexbox bug: labels and controls had `flex: 0 0 100%` causing full-width wrapping
   - Changed label to `flex: 0 0 200px` for fixed width
   - Changed control to `flex: 1 1 calc(100% - 200px)` for flexible width  
@@ -231,12 +239,12 @@ The project includes the official **FinalDoc logo** (blue document icon with con
 ## How to Download and Install
 
 ### Download the Plugin
-The production-ready plugin is available as **finalpdf-2.0.4.zip** (10.3MB) in the root directory of this Replit.
+The production-ready plugin is available as **finalpdf-2.0.5.zip** (10.3MB) in the root directory of this Replit.
 
 ### Installation Steps
-1. Download `finalpdf-2.0.4.zip` from this Replit
+1. Download `finalpdf-2.0.5.zip` from this Replit
 2. Go to your WordPress Admin → Plugins → Add New → Upload Plugin
-3. Choose the `finalpdf-2.0.4.zip` file
+3. Choose the `finalpdf-2.0.5.zip` file
 4. Click "Install Now"
 5. Activate the plugin
 6. Configure under FinalPDF menu in WordPress admin
