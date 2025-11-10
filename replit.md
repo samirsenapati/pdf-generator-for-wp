@@ -171,10 +171,13 @@ This plugin is licensed under the GNU General Public License v3.0. See LICENSE.t
   - All upgrade prompts and upsell links removed
   - All settings tabs now visible and accessible (no pro/free gating)
   - Migration/activation warnings removed for clean user experience
+  - **Admin UI fixed:** Clean two-column settings layout with labels on left and controls on right
+  - **Blue save button:** Professional blue color scheme (#2196F3) matching modern UI standards
 - **Branding Updates:**
   - Company: FinalDoc (finaldoc.io)
   - Product: FinalPDF
   - Support: hello@finaldoc.io
+  - Logo: Blue document icon with connection nodes included in plugin
   - All 59 plugin files renamed and updated
   - All function names, hooks, and identifiers updated
   - All URLs pointing to FinalDoc resources

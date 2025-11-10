@@ -388,8 +388,8 @@ select {
 
 .wps-btn-primary {
     color: #ffffff;
-    background-color: #6200ee;
-    border-color: #004EB6;
+    background-color: #2196F3;
+    border-color: #1976D2;
 }
 
 .wps-btn {
@@ -415,6 +415,8 @@ select {
 
 .wps-btn-primary:hover {
     color: #fff;
+    background-color: #1976D2;
+    border-color: #1565C0;
 }
 
 .wps-shadow-panel h3 {

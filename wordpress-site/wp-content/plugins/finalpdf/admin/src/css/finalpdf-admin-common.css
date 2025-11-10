@@ -5,10 +5,7 @@
     padding: 15px 0 0;
 }
 
-.wps-form-group {
-    margin: 0 -15px 15px;
-    flex-wrap: wrap;
-}
+/* Removed conflicting .wps-form-group rules to allow proper two-column layout from finalpdf-admin-global.css */
 
 .wps-form-select {
     display: flex;
@@ -28,11 +25,7 @@
     color: #000000;
 }
 
-.wps-form-group__control {
-    max-width: unset;
-    flex: 1 0 0;
-    width: 100%;
-}
+/* Removed conflicting .wps-form-group__control rules to allow proper two-column layout from finalpdf-admin-global.css */
 
 /*Upload and remove buttons ============START*/
 #pgfw_header_image_upload,
