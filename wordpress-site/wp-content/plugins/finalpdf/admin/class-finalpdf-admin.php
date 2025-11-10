@@ -2,7 +2,7 @@
 /**
  * The admin-specific functionality of the plugin.
  *
- * @link       https://yourwebsite.com/
+ * @link       https://finaldoc.com/
  * @since      1.0.0
  *
  * @package    FinalPDF
@@ -17,7 +17,7 @@
  *
  * @package    FinalPDF
  * @subpackage FinalPDF/admin
- * @author     FinalDoc <support@yourwebsite.com>
+ * @author     FinalDoc <support@finaldoc.com>
  */
 class FinalPDF_Admin {
 
@@ -3055,7 +3055,7 @@ class FinalPDF_Admin {
          */
         public function wps_finalpdf_get_update_notification_data() {
                 $wps_notification_data = array();
-                $url                   = 'https://yourwebsite.com/demo';
+                $url                   = 'https://finaldoc.com/demo';
                 $attr                  = array(
                         'action'         => 'wps_notification_fetch',
                         'plugin_version' => FINALPDF_VERSION,
@@ -3133,7 +3133,7 @@ class FinalPDF_Admin {
                                 'attributes' => array(
                                         'url' => array(
                                                 'type' => 'string',
-                                                'default' => 'https://yourwebsite.com/contact',
+                                                'default' => 'https://finaldoc.com/contact',
                                         ),
                                 ),
                         )

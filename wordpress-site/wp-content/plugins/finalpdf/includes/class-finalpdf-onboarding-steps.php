@@ -2,7 +2,7 @@
 /**
  * The admin-specific on-boarding functionality of the plugin.
  *
- * @link       https://yourwebsite.com
+ * @link       https://finaldoc.com
  * @since      1.0.0
  *
  * @package     finalpdf
@@ -14,7 +14,7 @@
  *
  * @package     finalpdf
  * @subpackage  finalpdf/includes
- * @author      FinalDoc <support@yourwebsite.com>
+ * @author      FinalDoc <support@finaldoc.com>
  */
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;

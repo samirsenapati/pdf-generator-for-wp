@@ -4,7 +4,7 @@
  *
  * This file is used to markup the admin-facing aspects of the plugin.
  *
- * @link       https://yourwebsite.com/
+ * @link       https://finaldoc.com/
  * @since      1.0.0
  *
  * @package    FinalPDF
@@ -75,26 +75,6 @@ if ( $finalpdf_save_check_flag ) {
                 </ul>
         </nav>
         <?php
-                $plugin_admin = new FinalPDF_Admin( 'finalpdf', '1.0.7' );
-                $count        = $plugin_admin->wps_finalpdf_get_count( 'settings' );
-                $key3 = get_option( 'wps_finalpdf_activated_timestamp' );
-        if ( ! empty( $count ) && ( empty( $key3 ) ) ) {
-                        $global_custom_css = 'const triggerError = () => {
-                                swal({
-                                        title: "Attention Required!",
-                                        text: "Please Migrate Your Database keys first by click on the below button then you can access the dashboard page.",
-                                        icon: "error",
-                                        button: "Click to Import",
-                                        closeOnClickOutside: false,
-                                }).then(function() {
-                                        jQuery( ".treat-button" ).click();
-                                });
-                        }
-                        triggerError();';
-                        wp_register_script( 'wps_finalpdf_incompatible_css', false, array(), '2.0.0', 'all' );
-                        wp_enqueue_script( 'wps_finalpdf_incompatible_css' );
-                        wp_add_inline_script( 'wps_finalpdf_incompatible_css', $global_custom_css );
-        }
         ?>
         <section class="wps-section">
                 <div>

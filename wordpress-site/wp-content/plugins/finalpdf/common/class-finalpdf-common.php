@@ -2,7 +2,7 @@
 /**
  * The common functionality of the plugin.
  *
- * @link       https://yourwebsite.com/
+ * @link       https://finaldoc.com/
  * @since      1.0.0
  *
  * @package    FinalPDF
@@ -22,7 +22,7 @@ use Automattic\WooCommerce\Utilities\OrderUtil;
  *
  * @package    FinalPDF
  * @subpackage FinalPDF/common
- * @author     FinalDoc <support@yourwebsite.com>
+ * @author     FinalDoc <support@finaldoc.com>
  */
 class FinalPDF_Common {
 	/**

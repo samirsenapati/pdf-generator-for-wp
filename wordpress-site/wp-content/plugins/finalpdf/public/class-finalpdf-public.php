@@ -2,7 +2,7 @@
 /**
  * The public-facing functionality of the plugin.
  *
- * @link       https://yourwebsite.com/
+ * @link       https://finaldoc.com/
  * @since      1.0.0
  *
  * @package    FinalPDF
@@ -18,7 +18,7 @@
  *
  * @package    FinalPDF
  * @subpackage FinalPDF/public
- * @author     FinalDoc <support@yourwebsite.com>
+ * @author     FinalDoc <support@finaldoc.com>
  */
 class FinalPDF_Public {
 
