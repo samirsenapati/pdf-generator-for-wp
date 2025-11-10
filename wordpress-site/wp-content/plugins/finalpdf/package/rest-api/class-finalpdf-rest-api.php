@@ -23,7 +23,7 @@
  * @since      1.0.0
  * @package    FinalPDF
  * @subpackage FinalPDF/package/rest-api/version1
- * @author     Your Company <support@yourwebsite.com>
+ * @author     FinalDoc <support@yourwebsite.com>
  */
 class FinalPDF_Rest_Api {
 

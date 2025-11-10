@@ -22,7 +22,7 @@ use Automattic\WooCommerce\Utilities\OrderUtil;
  *
  * @package    FinalPDF
  * @subpackage FinalPDF/common
- * @author     Your Company <support@yourwebsite.com>
+ * @author     FinalDoc <support@yourwebsite.com>
  */
 class FinalPDF_Common {
 	/**

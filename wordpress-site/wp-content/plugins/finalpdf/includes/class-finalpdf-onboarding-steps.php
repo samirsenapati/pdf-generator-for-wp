@@ -14,7 +14,7 @@
  *
  * @package     finalpdf
  * @subpackage  finalpdf/includes
- * @author      Your Company <support@yourwebsite.com>
+ * @author      FinalDoc <support@yourwebsite.com>
  */
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;

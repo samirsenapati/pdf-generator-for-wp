@@ -24,7 +24,7 @@ $finalpdf_tab_key = '';
 	do_action( 'wps_finalpdf_settings_saved_notice' );
 	?>
 	<div class="wps-header-container wps-bg-white wps-r-8">
-		<h1 class="wps-header-title"><?php echo esc_attr( 'Your Company' ); ?></h1>
+		<h1 class="wps-header-title"><?php echo esc_attr( 'FinalDoc' ); ?></h1>
 	</div>
 </header>
 <main class="wps-main wps-bg-white wps-r-8">
@@ -93,7 +93,7 @@ $finalpdf_tab_key = '';
 	<div class="centered">
 		<section class="cards">
 			<?php foreach ( get_plugins() as $key => $value ) : ?>
-				<?php if ( 'Your Company' === $value['Author'] ) : ?>
+				<?php if ( 'FinalDoc' === $value['Author'] ) : ?>
 					<article class="card">
 						<div class="container">
 							<h4><b><?php echo wp_kses_post( $value['Name'] ); ?></b></h4> 

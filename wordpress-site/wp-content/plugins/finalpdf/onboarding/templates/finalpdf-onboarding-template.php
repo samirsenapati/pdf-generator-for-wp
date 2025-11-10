@@ -24,7 +24,7 @@ $finalpdf_onboarding_form_fields = apply_filters( 'wps_finalpdf_on_boarding_form
 						<a href="#"><span class="finalpdf-close-form material-icons wps-finalpdf-close-icon mdc-dialog__button" data-mdc-dialog-action="close">clear</span></a>
 					</div>
 
-					<h3 class="wps-finalpdf-on-boarding-heading mdc-dialog__title"><?php esc_html_e( 'Welcome to Your Company', 'finalpdf' ); ?> </h3>
+					<h3 class="wps-finalpdf-on-boarding-heading mdc-dialog__title"><?php esc_html_e( 'Welcome to FinalDoc', 'finalpdf' ); ?> </h3>
 					<p class="wps-finalpdf-on-boarding-desc"><?php esc_html_e( 'We love making new friends! Subscribe below and we promise to keep you up-to-date with our latest new plugins, updates, awesome deals and a few special offers.', 'finalpdf' ); ?></p>
 
 					<form action="#" method="post" class="wps-finalpdf-on-boarding-form">

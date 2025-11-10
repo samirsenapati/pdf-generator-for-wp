@@ -22,7 +22,7 @@ if ( ! class_exists( 'FinalPDF_Api_Process' ) ) {
 	 * @since      1.0.0
 	 * @package    FinalPDF
 	 * @subpackage FinalPDF/includes
-	 * @author     Your Company <wpswings.com>
+	 * @author     FinalDoc <wpswings.com>
 	 */
 	class FinalPDF_Api_Process {
 

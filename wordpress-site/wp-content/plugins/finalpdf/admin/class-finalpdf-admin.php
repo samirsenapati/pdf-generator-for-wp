@@ -17,7 +17,7 @@
  *
  * @package    FinalPDF
  * @subpackage FinalPDF/admin
- * @author     Your Company <support@yourwebsite.com>
+ * @author     FinalDoc <support@yourwebsite.com>
  */
 class FinalPDF_Admin {
 

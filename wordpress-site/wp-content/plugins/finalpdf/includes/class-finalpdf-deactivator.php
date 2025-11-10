@@ -17,7 +17,7 @@
  * @since      1.0.0
  * @package    FinalPDF
  * @subpackage FinalPDF/includes
- * @author     Your Company <support@yourwebsite.com>
+ * @author     FinalDoc <support@yourwebsite.com>
  */
 class FinalPDF_Deactivator {
 

@@ -18,7 +18,7 @@
  *
  * @package    FinalPDF
  * @subpackage FinalPDF/public
- * @author     Your Company <support@yourwebsite.com>
+ * @author     FinalDoc <support@yourwebsite.com>
  */
 class FinalPDF_Public {
 
