@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This Replit contains **FinalPDF** (v2.0.4), a rebranded and enhanced WordPress PDF generation plugin with automatic Table of Contents functionality. Originally forked from "PDF Generator for WordPress", it has been completely rebranded for commercial distribution and enhanced with advanced TOC features for knowledge base sites.
+This Replit contains **FinalPDF** (v2.0.5), a rebranded and enhanced WordPress PDF generation plugin with automatic Table of Contents functionality. Originally forked from "PDF Generator for WordPress", it has been completely rebranded for commercial distribution and enhanced with advanced TOC features for knowledge base sites.
 
 ## What This Plugin Does
 
@@ -34,7 +34,7 @@ FinalPDF enables:
 │   │       │   └── languages/    # Translation files (finalpdf.*)
 │   │       └── sqlite-database-integration/  # SQLite support for WordPress
 │   └── wp-config.php            # WordPress configuration
-├── finalpdf-2.0.4.zip           # READY FOR DOWNLOAD: Production plugin package (v2.0.4)
+├── finalpdf-2.0.5.zip           # READY FOR DOWNLOAD: Production plugin package (v2.0.5)
 ├── index.html                   # Landing page with plugin information
 ├── start-all.sh                 # Startup script for the web server
 └── .gitignore                   # Git ignore rules
