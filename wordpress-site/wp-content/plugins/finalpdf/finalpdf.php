@@ -243,13 +243,11 @@ if('on' === get_option( 'wps_embed_source_strava' , '')){
 add_shortcode( 'wps_strava', 'wps_strava_embed_shortcode' );
 }
 
-if ( is_plugin_active( 'finalpdf/finalpdf.php' ) ) {
-        if('on' === get_option( 'wps_embed_source_ai_chatbot' , '')){
+if('on' === get_option( 'wps_embed_source_ai_chatbot' , '')){
 add_shortcode( 'wps_ai_chatbot', 'wps_chatbot_ai_shortcode' );
-        }
+}
 if('on' === get_option( 'wps_embed_source_rss_feed' , '')){
 add_shortcode( 'wps_rssapp_feed', 'wps_rssapp_feed_shortcode' );
-}
 }
 
 /**

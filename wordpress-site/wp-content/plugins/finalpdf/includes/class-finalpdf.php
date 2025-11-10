@@ -227,15 +227,6 @@ class FinalPDF {
                 $this->loader->add_action( 'wp_ajax_wps_pgfw_dismiss_notice_banner', $finalpdf_plugin_admin, 'wps_finalpdf_dismiss_notice_banner_callback' );
                 
                 $this->loader->add_action( 'init', $finalpdf_plugin_admin, 'register_google_embed_blocks' );
-        
-                                                        // PRO PLUGIN DUMMY CONTENT HTML FUNCTIONS  ////////////.
-                if ( ! is_plugin_active( 'finalpdf/finalpdf.php' ) ) {
-                        $this->loader->add_filter( 'finalpdf_taxonomy_settings_array_dummy', $finalpdf_plugin_admin, 'finalpdf_setting_fields_for_customising_taxonomy_dummy' );
-                        $this->loader->add_action( 'finalpdf_plugin_standard_admin_settings_sub_tabs_dummy', $finalpdf_plugin_admin, 'finalpdf_add_custom_template_settings_tab_dummy' );
-                        $this->loader->add_filter( 'finalpdf_template_pdf_settings_array_dummy', $finalpdf_plugin_admin, 'finalpdf_template_pdf_settings_page_dummy', 10 );
-                        $this->loader->add_filter( 'finalpdf_template_invoice_settings_array_dummy', $finalpdf_plugin_admin, 'finalpdf_template_invoice_setting_html_fields_dummy' );
-                        $this->loader->add_filter( 'finalpdf_layout_cover_page_setting_html_array_dummy', $finalpdf_plugin_admin, 'finalpdf_cover_page_html_layout_fields_dummy' );
-                }
 
                 $this->loader->add_action( 'wp_ajax_wps_pgfw_save_embed_source', $finalpdf_plugin_admin, 'wps_finalpdf_save_embed_source_callback' );
         }
