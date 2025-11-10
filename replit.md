@@ -186,10 +186,18 @@ This plugin is licensed under the GNU General Public License v3.0. See LICENSE.t
 **Previous Version:** 1.5.0
 - Base version before rebrand and TOC feature addition
 
+## Branding Assets
+
+The project includes the official **FinalDoc logo** (blue document icon with connection nodes):
+- Homepage header: Large logo with white rounded background
+- Homepage footer: Small logo next to company name
+- Plugin assets: `wordpress-site/wp-content/plugins/finalpdf/admin/src/images/finaldoc-logo.png`
+- Available for use in WordPress admin interfaces and PDF headers
+
 ## How to Download and Install
 
 ### Download the Plugin
-The production-ready plugin is available as **finalpdf.zip** (10MB) in the root directory of this Replit.
+The production-ready plugin is available as **finalpdf.zip** (10.3MB) in the root directory of this Replit.
 
 ### Installation Steps
 1. Download `finalpdf.zip` from this Replit

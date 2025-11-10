@@ -58,6 +58,38 @@
             margin-bottom: 30px;
         }
         
+        .logo {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 30px;
+            background: white;
+            border-radius: 24px;
+            padding: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+        
+        .company-branding {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 10px;
+        }
+        
+        .company-logo {
+            width: 32px;
+            height: 32px;
+        }
+        
         .download-btn {
             display: inline-block;
             background: white;
@@ -211,6 +243,9 @@
 <body>
     <div class="container">
         <div class="header">
+            <div class="logo">
+                <img src="finaldoc-logo.png" alt="FinalDoc Logo">
+            </div>
             <div class="version-badge">Version 2.0.0 - Production Ready</div>
             <h1>FinalPDF</h1>
             <p>WordPress PDF Generator with Automatic Table of Contents</p>
@@ -321,9 +356,10 @@
         
         <div class="footer">
             <p><strong>FinalPDF v2.0.0</strong> - Production Ready</p>
-            <p style="margin-top: 10px;">
-                A product by <strong>FinalDoc</strong>
-            </p>
+            <div class="company-branding">
+                <img src="finaldoc-logo.png" alt="FinalDoc" class="company-logo">
+                <span>A product by <strong>FinalDoc</strong></span>
+            </div>
             <p style="margin-top: 10px; color: #999; font-size: 0.9em;">
                 🌐 <a href="https://finaldoc.io" style="color: #667eea; text-decoration: none;">finaldoc.io</a> • 
                 ✉️ <a href="mailto:hello@finaldoc.io" style="color: #667eea; text-decoration: none;">hello@finaldoc.io</a>
