@@ -4,7 +4,7 @@
  *
  * This file is used to markup the admin-facing aspects of the plugin.
  *
- * @link       https://finaldoc.com/
+ * @link       https://finaldoc.io/
  * @since      1.0.0
  *
  * @package    FinalPDF
@@ -26,9 +26,9 @@ $finalpdf_default_tabs = $finalpdf_obj->wps_finalpdf_plug_default_tabs();
         ?>
         <div class="wps-header-container wps-bg-white wps-r-8">
                 <h1 class="wps-header-title"><?php echo esc_attr( strtoupper( str_replace( '-', ' ', apply_filters( 'wps_finalpdf_update_plugin_name_dashboard', $finalpdf_obj->finalpdf_get_plugin_name() ) ) ) ); ?></h1>
-                <a href="https://finaldoc.com/finalpdf/documentation/" target="_blank" class="wps-link"><?php esc_html_e( 'Documentation', 'finalpdf' ); ?></a>
+                <a href="https://finaldoc.io/finalpdf/documentation/" target="_blank" class="wps-link"><?php esc_html_e( 'Documentation', 'finalpdf' ); ?></a>
                 <span>|</span>
-                <a href="https://finaldoc.com/support/" target="_blank" class="wps-link"><?php esc_html_e( 'Support', 'finalpdf' ); ?></a>
+                <a href="https://finaldoc.io/support/" target="_blank" class="wps-link"><?php esc_html_e( 'Support', 'finalpdf' ); ?></a>
         </div>
 </header>
 <?php

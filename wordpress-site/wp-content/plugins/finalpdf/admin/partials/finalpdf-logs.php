@@ -4,7 +4,7 @@
  *
  * This file is used to markup the html field for PDF logs.
  *
- * @link       https://finaldoc.com/
+ * @link       https://finaldoc.io/
  * @since      3.0.0
  *
  * @package    FinalPDF

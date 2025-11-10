@@ -4,7 +4,7 @@
  *
  * This file is used to markup the admin-facing aspects of the plugin.
  *
- * @link  https://finaldoc.com/
+ * @link  https://finaldoc.io/
  * @since 1.0.0
  *
  * @package    finalpdf

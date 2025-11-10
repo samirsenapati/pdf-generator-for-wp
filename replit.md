@@ -172,9 +172,9 @@ This plugin is licensed under the GNU General Public License v3.0. See LICENSE.t
   - All settings tabs now visible and accessible (no pro/free gating)
   - Migration/activation warnings removed for clean user experience
 - **Branding Updates:**
-  - Company: FinalDoc (finaldoc.com)
+  - Company: FinalDoc (finaldoc.io)
   - Product: FinalPDF
-  - Support: support@finaldoc.com
+  - Support: hello@finaldoc.io
   - All 59 plugin files renamed and updated
   - All function names, hooks, and identifiers updated
   - All URLs pointing to FinalDoc resources

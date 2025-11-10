@@ -2,7 +2,7 @@
 /**
  * Fired during plugin activation
  *
- * @link       https://finaldoc.com/
+ * @link       https://finaldoc.io/
  * @since      1.0.0
  *
  * @package    FinalPDF

@@ -5,7 +5,7 @@
  * A class definition that includes attributes and functions used across both the
  * public-facing side of the site and the admin area.
  *
- * @link       https://finaldoc.com/
+ * @link       https://finaldoc.io/
  * @since      1.0.0
  *
  * @package    FinalPDF
@@ -24,7 +24,7 @@
  * @since      1.0.0
  * @package    FinalPDF
  * @subpackage FinalPDF/includes
- * @author     FinalDoc <support@finaldoc.com>
+ * @author     FinalDoc <hello@finaldoc.io>
  */
 class FinalPDF {
 

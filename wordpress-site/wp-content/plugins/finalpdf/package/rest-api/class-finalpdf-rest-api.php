@@ -4,7 +4,7 @@
  *
  * A class definition that includes api's endpoints and functions used across the plugin
  *
- * @link       https://finaldoc.com/
+ * @link       https://finaldoc.io/
  * @since      1.0.0
  *
  * @package    FinalPDF
@@ -23,7 +23,7 @@
  * @since      1.0.0
  * @package    FinalPDF
  * @subpackage FinalPDF/package/rest-api/version1
- * @author     FinalDoc <support@finaldoc.com>
+ * @author     FinalDoc <hello@finaldoc.io>
  */
 class FinalPDF_Rest_Api {
 

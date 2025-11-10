@@ -2,7 +2,7 @@
 /**
  * Fired during plugin deactivation
  *
- * @link       https://finaldoc.com/
+ * @link       https://finaldoc.io/
  * @since      1.0.0
  *
  * @package    FinalPDF
@@ -17,7 +17,7 @@
  * @since      1.0.0
  * @package    FinalPDF
  * @subpackage FinalPDF/includes
- * @author     FinalDoc <support@finaldoc.com>
+ * @author     FinalDoc <hello@finaldoc.io>
  */
 class FinalPDF_Deactivator {
 

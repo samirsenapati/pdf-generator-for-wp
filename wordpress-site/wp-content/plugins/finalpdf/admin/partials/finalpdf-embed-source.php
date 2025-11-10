@@ -4,7 +4,7 @@
  *
  * This file is used to markup the html field for overview tab.
  *
- * @link       https://finaldoc.com/
+ * @link       https://finaldoc.io/
  * @since      1.0.0
  *
  * @package    FinalPDF
@@ -74,7 +74,7 @@ function wps_embed_sources_page() {
 			<?php endforeach; ?>
 		</div>
 		<p style="margin-top: 15px; font-style: italic; color: #666;">
-			🔹<?php echo esc_html__( 'Prefer a quick guide ? ', 'finalpdf' ); ?><a href="https://finaldoc.com/documentation/?utm_source=wpswings-pdf-doc&utm_medium=referral&utm_campaign=documentation" target="_blank"><?php echo esc_html__( 'Check out our documentation to understand how these settings work.', 'finalpdf' ); ?></a>
+			🔹<?php echo esc_html__( 'Prefer a quick guide ? ', 'finalpdf' ); ?><a href="https://finaldoc.io/documentation/?utm_source=wpswings-pdf-doc&utm_medium=referral&utm_campaign=documentation" target="_blank"><?php echo esc_html__( 'Check out our documentation to understand how these settings work.', 'finalpdf' ); ?></a>
 		</p>
 	</div>
 

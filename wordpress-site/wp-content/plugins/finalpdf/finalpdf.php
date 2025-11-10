@@ -12,11 +12,11 @@
  *
  * @wordpress-plugin
  * Plugin Name:       FinalPDF
- * Plugin URI:        https://finaldoc.com/finalpdf/
+ * Plugin URI:        https://finaldoc.io/finalpdf/
  * Description:       FinalPDF allows you to generate and download PDF files from WordPress sites with automatic Table of Contents generation. Perfect for knowledge bases, documentation, and eCommerce stores.
  * Version:           2.0.0
  * Author:            FinalDoc
- * Author URI:        https://finaldoc.com/
+ * Author URI:        https://finaldoc.io/
  * Text Domain:       finalpdf
  * Domain Path:       /languages
  *
@@ -63,7 +63,7 @@ function define_finalpdf_constants() {
         finalpdf_constants( 'FINALPDF_VERSION', '2.0.0' );
         finalpdf_constants( 'FINALPDF_DIR_PATH', plugin_dir_path( __FILE__ ) );
         finalpdf_constants( 'FINALPDF_DIR_URL', plugin_dir_url( __FILE__ ) );
-        finalpdf_constants( 'FINALPDF_SERVER_URL', 'https://finaldoc.com' );
+        finalpdf_constants( 'FINALPDF_SERVER_URL', 'https://finaldoc.io' );
         finalpdf_constants( 'FINALPDF_ITEM_REFERENCE', 'FinalPDF' );
 }
 
@@ -205,8 +205,8 @@ function finalpdf_settings_link( $links ) {
  */
 function finalpdf_custom_settings_at_plugin_tab( $links_array, $plugin_file_name ) {
         if ( strpos( $plugin_file_name, basename( __FILE__ ) ) ) {
-                $links_array[] = '<a href="https://finaldoc.com/finalpdf/documentation/" target="_blank"><img src="' . esc_html( FINALPDF_DIR_URL ) . 'admin/src/images/Documentation.svg" class="wps-info-img" alt="documentation image" style="width: 20px;height: 20px;padding-right:2px;">' . __( 'Documentation', 'finalpdf' ) . '</a>';
-                $links_array[] = '<a href="https://finaldoc.com/support/" target="_blank"><img src="' . esc_html( FINALPDF_DIR_URL ) . 'admin/src/images/Support.svg" class="wps-info-img" alt="support image" style="width: 20px;height: 20px;padding-right:2px;">' . __( 'Support', 'finalpdf' ) . '</a>';
+                $links_array[] = '<a href="https://finaldoc.io/finalpdf/documentation/" target="_blank"><img src="' . esc_html( FINALPDF_DIR_URL ) . 'admin/src/images/Documentation.svg" class="wps-info-img" alt="documentation image" style="width: 20px;height: 20px;padding-right:2px;">' . __( 'Documentation', 'finalpdf' ) . '</a>';
+                $links_array[] = '<a href="https://finaldoc.io/support/" target="_blank"><img src="' . esc_html( FINALPDF_DIR_URL ) . 'admin/src/images/Support.svg" class="wps-info-img" alt="support image" style="width: 20px;height: 20px;padding-right:2px;">' . __( 'Support', 'finalpdf' ) . '</a>';
         }
         return $links_array;
 }
