@@ -609,7 +609,7 @@ if ( ! function_exists( 'wps_banner_notification_plugin_html' ) ) {
                 if ( isset( $screen->id ) ) {
                         $pagescreen = $screen->id;
                 }
-                if ( ( isset( $pagescreen ) && 'plugins' === $pagescreen ) || ( 'wp-swings_page_home' == $pagescreen ) ) {
+                if ( ( isset( $pagescreen ) && 'plugins' === $pagescreen ) || ( 'wps-plugins_page_home' == $pagescreen ) ) {
                         $notification_id = get_option( 'wps_finalpdf_notify_new_msg_id', false );
                         $banner_id = get_option( 'wps_finalpdf_notify_new_banner_id', false );
                         if ( isset( $banner_id ) && '' !== $banner_id ) {

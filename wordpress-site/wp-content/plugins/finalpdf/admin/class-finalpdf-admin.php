@@ -59,7 +59,7 @@ class FinalPDF_Admin {
          */
         public function finalpdf_admin_enqueue_styles( $hook ) {
                 $screen = get_current_screen();
-                if (isset($screen->id) && ('wp-swings_page_finalpdf_menu' == $screen->id || 'wp-swings_page_home' == $screen->id)) { // phpcs:ignore
+                if (isset($screen->id) && ('wps-plugins_page_finalpdf_menu' == $screen->id || 'wps-plugins_page_home' == $screen->id)) { // phpcs:ignore
 
                         wp_enqueue_style( 'wps-finalpdf-select2-css', FINALPDF_DIR_URL . 'package/lib/select-2/finalpdf-select2.css', array(), time(), 'all' );
 
@@ -96,7 +96,7 @@ class FinalPDF_Admin {
                 wp_register_script( $this->plugin_name . 'admin-notice', plugin_dir_url( __FILE__ ) . 'src/js/finalpdf-notices.js', array( 'jquery' ), $this->version, false );
                 wp_localize_script( $this->plugin_name . 'admin-notice', 'wps_finalpdf_notice', $wps_finalpdf_notice );
                 wp_enqueue_script( $this->plugin_name . 'admin-notice' );
-                if (isset($screen->id) && ('wp-swings_page_finalpdf_menu' == $screen->id || 'wp-swings_page_home' == $screen->id)) { // phpcs:ignore
+                if (isset($screen->id) && ('wps-plugins_page_finalpdf_menu' == $screen->id || 'wps-plugins_page_home' == $screen->id)) { // phpcs:ignore
                         wp_enqueue_script( 'wps-finalpdf-select2', FINALPDF_DIR_URL . 'package/lib/select-2/finalpdf-select2.js', array( 'jquery' ), time(), false );
 
                         wp_enqueue_script( 'wps-finalpdf-metarial-js', FINALPDF_DIR_URL . 'package/lib/material-design/material-components-web.min.js', array(), time(), false );
