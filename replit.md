@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This Replit contains **FinalPDF** (v2.0.7), a rebranded and enhanced WordPress PDF generation plugin with automatic Table of Contents functionality. Originally forked from "PDF Generator for WordPress", it has been completely rebranded for commercial distribution and enhanced with advanced TOC features for knowledge base sites.
+This Replit contains **FinalPDF** (v2.0.8), a rebranded and enhanced WordPress PDF generation plugin with automatic Table of Contents functionality. Originally forked from "PDF Generator for WordPress", it has been completely rebranded for commercial distribution and enhanced with advanced TOC features for knowledge base sites.
 
 ## What This Plugin Does
 
@@ -34,7 +34,7 @@ FinalPDF enables:
 │   │       │   └── languages/    # Translation files (finalpdf.*)
 │   │       └── sqlite-database-integration/  # SQLite support for WordPress
 │   └── wp-config.php            # WordPress configuration
-├── finalpdf-2.0.7.zip           # READY FOR DOWNLOAD: Production plugin package (v2.0.7)
+├── finalpdf-2.0.8.zip           # READY FOR DOWNLOAD: Production plugin package (v2.0.8)
 ├── index.html                   # Landing page with plugin information
 ├── start-all.sh                 # Startup script for the web server
 └── .gitignore                   # Git ignore rules
@@ -80,7 +80,7 @@ To deploy this plugin to a real WordPress site:
 
 1. Download the plugin ZIP file:
    ```
-   finalpdf-2.0.7.zip
+   finalpdf-2.0.8.zip
    ```
 
 2. Upload to your WordPress installation via:
@@ -159,7 +159,16 @@ This plugin is licensed under the GNU General Public License v3.0. See LICENSE.t
 
 ## Version History
 
-**Current Version:** 2.0.7 (FinalPDF - FinalDoc Company Edition)
+**Current Version:** 2.0.8 (FinalPDF - FinalDoc Company Edition)
+- **ADMIN CSS/JS LOADING FIXED:** Settings page styling and functionality fully restored
+  - Fixed screen ID checks that prevented admin CSS and JavaScript from loading
+  - Changed all 'wp-swings_page_*' screen IDs to 'wps-plugins_page_*' to match menu registration
+  - Settings page tabs now display with correct Material Design styling
+  - Select2 dropdowns, color pickers, and all UI components now work correctly
+  - Onboarding popups and banner notifications now display on correct screens
+  - Root cause: Legacy plugin name 'wp-swings' still used in screen ID checks instead of current 'wps-plugins' menu slug
+
+**Previous Version:** 2.0.7 (FinalPDF - FinalDoc Company Edition)
 - **CHECKBOX SETTINGS FIXED:** Enable Bulk Download and Enable Print Option checkboxes now save correctly
   - Fixed missing variable extraction for `finalpdf_bulk_download_enable` and `finalpdf_print_enable_org_tag`
   - Fixed quoted string bugs that prevented checkbox values from being stored
@@ -256,12 +265,12 @@ The project includes the official **FinalDoc logo** (blue document icon with con
 ## How to Download and Install
 
 ### Download the Plugin
-The production-ready plugin is available as **finalpdf-2.0.7.zip** (10.3MB) in the root directory of this Replit.
+The production-ready plugin is available as **finalpdf-2.0.8.zip** (10.3MB) in the root directory of this Replit.
 
 ### Installation Steps
-1. Download `finalpdf-2.0.7.zip` from this Replit
+1. Download `finalpdf-2.0.8.zip` from this Replit
 2. Go to your WordPress Admin → Plugins → Add New → Upload Plugin
-3. Choose the `finalpdf-2.0.7.zip` file
+3. Choose the `finalpdf-2.0.8.zip` file
 4. Click "Install Now"
 5. Activate the plugin
 6. Configure under FinalPDF menu in WordPress admin

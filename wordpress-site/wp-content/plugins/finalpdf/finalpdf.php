@@ -14,7 +14,7 @@
  * Plugin Name:       FinalPDF
  * Plugin URI:        https://finaldoc.io/finalpdf/
  * Description:       FinalPDF allows you to generate and download PDF files from WordPress sites with automatic Table of Contents generation. Perfect for knowledge bases, documentation, and eCommerce stores.
- * Version:           2.0.7
+ * Version:           2.0.8
  * Author:            FinalDoc
  * Author URI:        https://finaldoc.io/
  * Text Domain:       finalpdf
@@ -24,7 +24,7 @@
  * Tested up to:         6.8.0
  * WC requires at least: 5.2.0
  * WC tested up to:      9.8.1
- * Stable tag:           2.0.7
+ * Stable tag:           2.0.8
  * Requires PHP:         7.4
  *
  * License:           GNU General Public License v3.0
@@ -60,7 +60,7 @@ if ( isset( $plug['finalpdf/finalpdf.php'] ) ) {
  * @since 1.0.0
  */
 function define_finalpdf_constants() {
-        finalpdf_constants( 'FINALPDF_VERSION', '2.0.7' );
+        finalpdf_constants( 'FINALPDF_VERSION', '2.0.8' );
         finalpdf_constants( 'FINALPDF_DIR_PATH', plugin_dir_path( __FILE__ ) );
         finalpdf_constants( 'FINALPDF_DIR_URL', plugin_dir_url( __FILE__ ) );
         finalpdf_constants( 'FINALPDF_SERVER_URL', 'https://finaldoc.io' );
